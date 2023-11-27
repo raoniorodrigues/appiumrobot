@@ -1,0 +1,201 @@
+.class final Ly7/u$b;
+.super Lkotlin/coroutines/jvm/internal/l;
+.source ""
+
+# interfaces
+.implements Lic/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ly7/u;->e()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/l;",
+        "Lic/p<",
+        "Ltc/p0;",
+        "Lbc/d<",
+        "-",
+        "Lyb/u;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/f;
+    c = "com.google.firebase.sessions.SessionInitiator$initiateSession$1"
+    f = "SessionInitiator.kt"
+    l = {
+        0x3f
+    }
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field g:I
+
+.field final synthetic h:Ly7/u;
+
+.field final synthetic i:Ly7/o;
+
+
+# direct methods
+.method constructor <init>(Ly7/u;Ly7/o;Lbc/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ly7/u;",
+            "Ly7/o;",
+            "Lbc/d<",
+            "-",
+            "Ly7/u$b;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Ly7/u$b;->h:Ly7/u;
+
+    iput-object p2, p0, Ly7/u$b;->i:Ly7/o;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/l;-><init>(ILbc/d;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lbc/d;)Lbc/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lbc/d<",
+            "*>;)",
+            "Lbc/d<",
+            "Lyb/u;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance p1, Ly7/u$b;
+
+    iget-object v0, p0, Ly7/u$b;->h:Ly7/u;
+
+    iget-object v1, p0, Ly7/u$b;->i:Ly7/o;
+
+    invoke-direct {p1, v0, v1, p2}, Ly7/u$b;-><init>(Ly7/u;Ly7/o;Lbc/d;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ltc/p0;
+
+    check-cast p2, Lbc/d;
+
+    invoke-virtual {p0, p1, p2}, Ly7/u$b;->invoke(Ltc/p0;Lbc/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Ltc/p0;Lbc/d;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ltc/p0;",
+            "Lbc/d<",
+            "-",
+            "Lyb/u;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1, p2}, Ly7/u$b;->create(Ljava/lang/Object;Lbc/d;)Lbc/d;
+
+    move-result-object p1
+
+    check-cast p1, Ly7/u$b;
+
+    sget-object p2, Lyb/u;->a:Lyb/u;
+
+    invoke-virtual {p1, p2}, Ly7/u$b;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    invoke-static {}, Lcc/b;->c()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iget v1, p0, Ly7/u$b;->g:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    invoke-static {p1}, Lyb/o;->b(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    invoke-static {p1}, Lyb/o;->b(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Ly7/u$b;->h:Ly7/u;
+
+    invoke-static {p1}, Ly7/u;->a(Ly7/u;)Ly7/t;
+
+    move-result-object p1
+
+    iget-object v1, p0, Ly7/u$b;->i:Ly7/o;
+
+    iput v2, p0, Ly7/u$b;->g:I
+
+    invoke-interface {p1, v1, p0}, Ly7/t;->a(Ly7/o;Lbc/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2
+
+    return-object v0
+
+    :cond_2
+    :goto_0
+    sget-object p1, Lyb/u;->a:Lyb/u;
+
+    return-object p1
+.end method
