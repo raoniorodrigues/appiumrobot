@@ -1,14 +1,21 @@
 # Configurações Android
 
 *** Settings ***
-Library         AppiumLibrary
-Library    Browser
+Documentation    Imports e comportamentos importantes para base do projeto
 
-Resource    env.resource
-Resource    pages/Login.resource
+Library         AppiumLibrary
+
+Resource         env.resource
+
+# PAGE OBJECTS
+Resource         pages/LoginPage.resource
+Resource         ../resources/pages/LoginPage.resource
+Resource         ../resources/pages/HomeICSToolsPage.resource
+Resource         ../resources/pages/HomeEdspPage.resource
+Resource         ../resources/pages/EDSPBipagemPage.resource
 
 *** Keywords ***
-Start Session
+Iniciar Sessão
     Open Application    
     ...    ${REMOTE_URL}   
     ...    platformName=${platformName}  
