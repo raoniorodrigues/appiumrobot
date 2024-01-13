@@ -1,0 +1,27 @@
+{"level":30,"time":"2023-12-04T15:27:15.985Z","pid":12732,"hostname":"Rodrigues","msg":"Listening on 63131"}
+{"level":30,"time":"2023-12-04T15:27:16.050Z","pid":12732,"hostname":"Rodrigues","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-04T15:27:16.051Z","pid":12732,"hostname":"Rodrigues","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-04T15:27:24.360Z","pid":12732,"hostname":"Rodrigues","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-04T15:27:24.360Z","pid":12732,"hostname":"Rodrigues","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:9470:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:9991:59)
+    at PlaywrightServer.setTimeout (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:10237:57)
+    at handleUnary (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-04T15:27:43.062Z","pid":12732,"hostname":"Rodrigues","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-04T15:27:43.062Z","pid":12732,"hostname":"Rodrigues","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:9470:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:9991:59)
+    at PlaywrightServer.setTimeout (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\index.js:10237:57)
+    at handleUnary (C:\Users\raoni\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-04T15:27:44.498Z","pid":12732,"hostname":"Rodrigues","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-04T15:27:44.499Z","pid":12732,"hostname":"Rodrigues","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-04T15:27:44.534Z","pid":12732,"hostname":"Rodrigues","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-12-04T15:27:44.534Z","pid":12732,"hostname":"Rodrigues","msg":"End of node method closeAllBrowsers"}

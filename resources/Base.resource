@@ -7,12 +7,21 @@ Library         AppiumLibrary
 
 Resource         env.resource
 
+# Common Resources
+Resource         ../resources/pages/common/CommonAberturaCamera.resource
+Resource         ../resources/pages/common/CommonCarregarUsuario.resource
+Resource         ../resources/pages/common/CommonGerarTrbAleatoria.resource
+Resource         ../resources/pages/common/CommonTelaBipagem.resource
+
 # PAGE OBJECTS
 Resource         pages/LoginPage.resource
-Resource         ../resources/pages/LoginPage.resource
-Resource         ../resources/pages/HomeICSToolsPage.resource
-Resource         ../resources/pages/HomeEdspPage.resource
 Resource         ../resources/pages/EDSPBipagemPage.resource
+Resource         ../resources/pages/EDSPCadastroDeGaiolas.resource
+Resource         ../resources/pages/EDSPConsultaDeGaiolas.resource
+Resource         ../resources/pages/EDSPHomePage.resource
+Resource         ../resources/pages/EDSPAlocarTbrPage.resource
+Resource         ../resources/pages/HomeICSToolsPage.resource
+Resource         ../resources/pages/LoginPage.resource
 
 *** Keywords ***
 Iniciar Sessão
@@ -29,7 +38,8 @@ Iniciar Sessão
     Start Screen Recording    videoSize=1280x720
 
 Fechar App
-    Stop Screen Recording    filename=Teste.mp4
+    Sleep    3
+    Stop Screen Recording    filename=${PREV_TEST_NAME}
     Capture Page Screenshot    # Captura uma screenshot
     Close Application
 

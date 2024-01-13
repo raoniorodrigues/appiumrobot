@@ -6,8 +6,6 @@ Resource         ../resources/Base.resource
 Suite Setup      Iniciar Sessão
 Suite Teardown   Fechar App
 
-Test Timeout    1 minute
-
 *** Test Cases ***
 Acessa o EDSP
     ${user}    Create Dictionary

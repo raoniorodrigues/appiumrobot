@@ -4,3 +4,5 @@ __pycache__
 *.html
 *.xml
 *.png
+apk/tools
+apk/tools/*
